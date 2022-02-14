@@ -27,6 +27,7 @@ class CommissionImport extends FormRequest
             'config' => [
                 'required',
                 'file',
+                'mimes:xlsx, xls'
             ]
         ];
     }
